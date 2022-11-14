@@ -1,0 +1,27 @@
+{
+  "name": "social-media-dashboard",
+  "version": "1.0.0",
+  "description": "Social Media Dashboard With Theme Switcher",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/claudioalvesmachado/social-media-dashboard.git"
+  },
+  "author": "Cláudio Alves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claudioalvesmachado/social-media-dashboard/issues"
+  },
+  "homepage": "https://github.com/claudioalvesmachado/social-media-dashboard#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.56.1"
+  }
+}
