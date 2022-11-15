@@ -1,82 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <!-- JS & CSS FILES -->
+  <script src="app/js/app.js" defer></script>
+  <link rel="stylesheet" href="dist/css/main.css">
+
   <title>Social Media Dashboard</title>
- 
+
 </head>
+
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+  <main>
+    <!-- Header start -->
+    <header class="header">
+      <div>
+        <h1 class="header__title">Social Media Dashboard</h1>
+        <h3 class="header__subtitle">Total Followers: 23,004</h3>
+      </div>
 
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+      <div class="switch">
+        <span class="switch__label">Dark Mode</span>
+        <input type="checkbox" class="switch__button">
+      </div>
+    </header>
+<!-- Header end -->
 
 
+<!-- Followers Section start -->
+    <section class="followers-count">
+      <div class="followers-count__card followers-count__card--facebook">
+        <span class="user"><img src="assets/img/icon-facebook.svg" alt="Facebook icon">@nathanf</img></span>
+        <div class="flw-num">
+          1987
+          <span>Followers</span>
+        </div>
+        <span class="flw-update"><img src="assets/img/icon-up.svg" alt="Up arrow">12 Today</img></span>
+      </div>
 
-  Overview - Today
+      <div class="followers-count__card followers-count__card--twitter">
+        <span class="user"><img src="assets/img/icon-twitter.svg" alt="Twitter icon">@nathanf</img></span>
+        <div class="flw-num">
+          1044
+          <span>Followers</span>
+        </div>
+        <span class="flw-update"><img src="assets/img/icon-up.svg" alt="Up arrow">99 Today</img></span>
+      </div>
 
-  Page Views
-  87
-  3%
+      <div class="followers-count__card followers-count__card--instagram">
+        <span class="user"><img src="assets/img/icon-instagram.svg" alt="Instagram icon">@realnathanf</img></span>
+        <div class="flw-num">
+          11k
+          <span>Followers</span>
+        </div>
+        <span class="flw-update"><img src="assets/img/icon-up.svg" alt="Up arrow">1099 Today</img></span>
+      </div>
 
-  Likes
-  52
-  2%
+      <div class="followers-count__card followers-count__card--youtube">
+        <span class="user"><img src="assets/img/icon-youtube.svg" alt="Youtube icon">Nathan F.</img></span>
+        <div class="flw-num">
+          8239
+          <span>Subscribers</span>
+        </div>
+        <span class="flw-update"><img src="assets/img/icon-down.svg" alt="Down arrow">144 Today</img></span>
+      </div>
+    </section>
+<!-- Followers Section end -->
 
-  Likes
-  5462
-  2257%
 
-  Profile Views
-  52k
-  1375%
+<!-- Overview Section start -->
+    <section class="overview">
+      <h2 class="overview__title">Overview - Today</h2>
 
-  Retweets
-  117
-  303%
+      <div class="overview__grid">
+        <div class="overview__card">
+          <div class="overview__desc">Page Views</div>
+          <img src="assets/img/icon-facebook.svg" alt="Facebook icon">
+          <div class="overview__num">87</div>
+          <div class="overview__variation">3%</div>
+        </div>
+        <div class="overview__card">
+          <div class="overview__desc">Likes</div>
+          <img src="assets/img/icon-facebook.svg" alt="Facebook icon">
+          <div class="overview__num">52</div>
+          <div class="overview__variation">2%</div>
+        </div>
+        <div class="overview__card">
+          <div class="overview__desc">Likes</div>
+          <img src="assets/img/icon-instagram.svg" alt="Instagram icon">
+          <div class="overview__num">5462</div>
+          <div class="overview__variation">2257%</div>
+        </div>
+        <div class="overview__card">
+          <div class="overview__desc">Profile Views</div>
+          <img src="assets/img/icon-instagram.svg" alt="Instagram icon">
+          <div class="overview__num">52k</div>
+          <div class="overview__variation">1375%</div>
+        </div>
+        <div class="overview__card">
+          <div class="overview__desc">Retweets</div>
+          <img src="assets/img/icon-twitter.svg" alt="Twitter icon">
+          <div class="overview__num">117</div>
+          <div class="overview__variation">303%</div>
+        </div>
+        <div class="overview__card">
+          <div class="overview__desc">Likes</div>
+          <img src="assets/img/icon-twitter.svg" alt="Twitter icon">
+          <div class="overview__num">507</div>
+          <div class="overview__variation">553%</div>
+        </div>
+        <div class="overview__card">
+          <div class="overview__desc">Likes</div>
+          <img src="assets/img/icon-youtube.svg" alt="Youtube icon">
+          <div class="overview__num">107</div>
+          <div class="overview__variation">19%</div>
+        </div>
+        <div class="overview__card">
+          <div class="overview__desc">Total Views</div>
+          <img src="assets/img/icon-youtube.svg" alt="Youtube icon">
+          <div class="overview__num">1407</div>
+          <div class="overview__variation">12%</div>
+        </div>
+      </div>
+    </section>
+    <!-- Overview Section end -->
 
-  Likes
-  507
-  553%
+    
+    <!-- Attribution -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Cláudio Alves</a>.
+    </div>
+  </main>
 
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Cláudio Alves</a>.
-  </div>
 </body>
+
 </html>
