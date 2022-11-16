@@ -17,11 +17,13 @@ $clr-youTube: hsl(348, 97%, 39%);
 }
 
 // DARK THEME
-.darkmode:root {
-  --clr-bg: hsl(230, 17%, 14%);
-  --clr-bg-pattern: hsl(232, 19%, 15%);
-  --clr-bg-card: hsl(228, 28%, 20%);
-  --clr-text-400: hsl(228, 34%, 66%);
-  --clr-text-500: hsl(0, 0%, 100%);
-  --clr-toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+@media (prefers-color-scheme: dark) {
+  .darkmode:root {
+    --clr-bg: hsl(230, 17%, 14%);
+    --clr-bg-pattern: hsl(232, 19%, 15%);
+    --clr-bg-card: hsl(228, 28%, 20%);
+    --clr-text-400: hsl(228, 34%, 66%);
+    --clr-text-500: hsl(0, 0%, 100%);
+    --clr-toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
 }
