@@ -1,0 +1,44 @@
+@use '../utils/' as *;
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    font-family: $ff-default;
+    font-size: $fs-cards-200;
+    font-weight: $fw-500;
+    letter-spacing: -.1rem; // -1px
+}
+
+.header {
+    &__title {
+        font-size: clamp(calc($fs-heading-300 / 1.25), $fs-prefered, $fs-heading-400);
+    }
+    &__subtitle,
+    .switch {
+        font-size: $fs-heading-200;
+    }
+}
+
+.followers-count {
+    &__num {
+        font-size: $fs-cards-400;
+        
+        span {
+            text-transform: uppercase;
+            font-size: $fs-cards-200;
+            font-weight: $fw-400;
+            letter-spacing: .5rem; // 0.5px
+        }
+    }
+}
+
+.overview {
+    &__title {
+        font-size: clamp(calc($fs-heading-300 / 1.25), $fs-prefered, $fs-heading-300);
+    }
+    &__num {
+        font-size: $fs-cards-300;
+    }
+}
