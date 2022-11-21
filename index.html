@@ -8,8 +8,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <!-- JS & CSS FILES -->
-  <script src="app/js/app.js" defer></script><!---->
+  <script src="app/js/app.js" defer></script>
   <link rel="stylesheet" href="dist/css/main.css">
+
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Social Media Dashboard</title>
 
@@ -20,24 +25,25 @@
   <main>
     <!-- Header start -->
     <header class="header">
-      <div>
+    
         <h1 class="header__title">Social Media Dashboard</h1>
         <h3 class="header__subtitle">Total Followers: 23,004</h3>
-      </div>
+     
 
+      <hr class="header__divider"> <!-- Under the header for display flex -->
       <div class="switch">
         <span class="switch__label">Dark Mode</span>
         <input type="checkbox" class="switch__button">
       </div>
-    </header>
-<!-- Header end -->
+    </header> 
+    <!-- Header end -->
 
 
-<!-- Followers Section start -->
+    <!-- Followers Section start -->
     <section class="followers-count">
       <div class="followers-count__card followers-count__card--facebook">
         <span class="user"><img src="assets/img/icon-facebook.svg" alt="Facebook icon">@nathanf</img></span>
-        <div class="flw-num">
+        <div class="followers-count__num">
           1987
           <span>Followers</span>
         </div>
@@ -46,7 +52,7 @@
 
       <div class="followers-count__card followers-count__card--twitter">
         <span class="user"><img src="assets/img/icon-twitter.svg" alt="Twitter icon">@nathanf</img></span>
-        <div class="flw-num">
+        <div class="followers-count__num">
           1044
           <span>Followers</span>
         </div>
@@ -55,7 +61,7 @@
 
       <div class="followers-count__card followers-count__card--instagram">
         <span class="user"><img src="assets/img/icon-instagram.svg" alt="Instagram icon">@realnathanf</img></span>
-        <div class="flw-num">
+        <div class="followers-count__num">
           11k
           <span>Followers</span>
         </div>
@@ -64,17 +70,17 @@
 
       <div class="followers-count__card followers-count__card--youtube">
         <span class="user"><img src="assets/img/icon-youtube.svg" alt="Youtube icon">Nathan F.</img></span>
-        <div class="flw-num">
+        <div class="followers-count__num">
           8239
           <span>Subscribers</span>
         </div>
         <span class="flw-update"><img src="assets/img/icon-down.svg" alt="Down arrow">144 Today</img></span>
       </div>
     </section>
-<!-- Followers Section end -->
+    <!-- Followers Section end -->
 
 
-<!-- Overview Section start -->
+    <!-- Overview Section start -->
     <section class="overview">
       <h2 class="overview__title">Overview - Today</h2>
 
@@ -131,7 +137,7 @@
     </section>
     <!-- Overview Section end -->
 
-    
+
     <!-- Attribution -->
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

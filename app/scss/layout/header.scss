@@ -1,0 +1,22 @@
+@use '../utils/' as *;
+
+.header {
+    align-items: center;
+    padding: 2.4rem;
+    background-color: var(--clr-bg-pattern);
+    position: relative;
+    min-height: $header-h;
+    
+    &__title {
+        color: var(--clr-text-500);
+    }
+
+    &__subtitle {
+        color: var(--clr-text-400);
+    }
+    &__divider {
+        border: none;
+        border-top: .1rem solid var(--clr-text-400);
+        margin: 2.4rem auto;
+    }
+}

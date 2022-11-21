@@ -1,0 +1,39 @@
+@use "../utils/" as *;
+
+.switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+
+    &__label {
+        color: var(--clr-text-400)
+    }
+
+    &__button {
+        cursor: pointer;
+        width: $switch-w;
+        height: $switch-h;
+        background-color: var(--clr-toggle);
+        background-image: var(--clr-toggle);
+        border-radius: 100vw;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: "";
+            width: $switch-btn-size;
+            height: $switch-btn-size;
+            background-color: var(--clr-bg);
+            border-radius: 100vw;
+            transform: scale(1.1);
+            position: absolute;
+            left: 2.8rem;
+            transition: all 0.4s;
+        }
+        &:checked::before {
+            left: 0.4rem;
+        }
+    }
+}
