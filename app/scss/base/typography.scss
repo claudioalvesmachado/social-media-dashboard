@@ -17,7 +17,7 @@ main {
     }
     &__subtitle,
     .switch {
-        font-size: z;
+        font-size: clamp(calc($fs-heading-200 / 1.1), 4vw, $fs-heading-200);
     }
 }
 
